@@ -1,0 +1,27 @@
+module.exports = [
+  {id: "7ee3d3d8-39b8-5758-a7b1-8c151d289dba", dep: "07:26", type: "morning", shuttle: false, fav: false, active: false},
+  {id: "a9f116f2-36bd-3986-6aa3-73dd544c2088", dep: "07:46", type: "morning", shuttle: false, fav: false, active: false},
+  {id: "41a14221-823c-6ff9-56d2-d90a162e577a", dep: "08:06", type: "morning", shuttle: false, fav: false, active: false},
+  {id: "f88685a4-88d7-bb26-f3f9-1e7ab78be81c", dep: "08:18", type: "morning", shuttle: true, fav: false, active: false},
+  {id: "9686916f-011b-039d-7bc4-c7367f40644e", dep: "08:26", type: "morning", shuttle: false, fav: false, active: false},
+  {id: "9086d92c-80aa-00cb-fca0-4cf7e1a254c8", dep: "08:36", type: "morning", shuttle: false, fav: false, active: false},
+  {id: "5c03729d-46c6-ac9c-e680-3a7c48b2f893", dep: "08:46", type: "morning", shuttle: false, fav: false, active: false},
+  {id: "15299201-0840-33ab-f7bf-bc48db18e81c", dep: "08:58", type: "morning", shuttle: true, fav: false, active: false},
+  {id: "a04e755f-94ec-a5b2-0774-196e035199cd", dep: "09:06", type: "morning", shuttle: false, fav: false, active: false},
+  {id: "24ffc9e2-9549-52e8-38c2-862b781708cb", dep: "09:18", type: "morning", shuttle: true, fav: false, active: false},
+  {id: "6a4443a3-bf46-66af-2dd1-f20ee29ed67b", dep: "09:26", type: "morning", shuttle: false, fav: false, active: false},
+  {id: "0932da7e-58ab-1796-3ed9-5dbb79a43641", dep: "09:46", type: "morning", shuttle: false, fav: false, active: false},
+
+  {id: "37657a53-50e7-0ee9-3460-c55a7714d8e3", dep: "16:55", type: "evening", shuttle: false, fav: false, active: false},
+  {id: "644c1c53-f942-2e26-7ce7-e1f4f1341a81", dep: "17:15", type: "evening", shuttle: false, fav: false, active: false},
+  {id: "ebca9416-e652-8bf9-7a5b-9b9ca6b130dd", dep: "17:35", type: "evening", shuttle: false, fav: false, active: false},
+  {id: "9ad2ffad-54ed-922d-34b3-bf2134ad24eb", dep: "17:45", type: "evening", shuttle: true, fav: false, active: false},
+  {id: "2d7863b8-3592-0c2b-0b37-defb74efd60a", dep: "17:55", type: "evening", shuttle: false, fav: false, active: false},
+  {id: "d4771004-342c-7750-32ba-c8bf8a0629ce", dep: "18:05", type: "evening", shuttle: true, fav: false, active: false},
+  {id: "707d8f36-6c26-03ba-93ad-c35c422892ef", dep: "18:15", type: "evening", shuttle: false, fav: false, active: false},
+  {id: "8ee52cd2-d58c-167c-cc08-e19fa473597c", dep: "18:25", type: "evening", shuttle: true, fav: false, active: false},
+  {id: "88866632-bb0b-7cd7-a1d7-76ba0c72a5a6", dep: "18:32", type: "evening", shuttle: false, fav: false, active: false},
+  {id: "94c09812-6ca8-ca06-9078-1b24a937c719", dep: "18:52", type: "evening", shuttle: false, fav: false, active: false},
+  {id: "914b2700-e9f9-a9b8-7d6e-27f54bc84aee", dep: "19:12", type: "evening", shuttle: false, fav: false, active: false},
+  {id: "5b1d2913-f13b-d4a6-05b1-128f1503de65", dep: "19:32", type: "evening", shuttle: false, fav: false, active: false}
+];
