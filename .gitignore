@@ -1,0 +1,5 @@
+.DS_Store
+node_modules/.DS_Store
+node_modules/bootstrap/.DS_Store
+node_modules/bootstrap/dist/.DS_Store
+node_modules/**
