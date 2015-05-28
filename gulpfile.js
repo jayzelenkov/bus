@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 var browserify = require("browserify");
 var watchify = require("watchify");
@@ -21,7 +21,7 @@ var b = watchify(browserify(opts));
 
 function bundle() {
   return b.bundle()
-    .on('error', gutil.log.bind(gutil, "browserify error"))
+    .on("error", gutil.log.bind(gutil, "browserify error"))
     .pipe(source("bundle.js"))
     .pipe(buffer())
       .pipe(sourcemaps.init({loadMaps: true}))
