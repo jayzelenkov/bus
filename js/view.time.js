@@ -34,12 +34,5 @@ module.exports = Backbone.View.extend({
     var toggleVal = !this.model.get("fav");
     this.model.set("fav", toggleVal).save();
     this.render();
-  },
-
-  highlightActive: function() {
-    var hour = (new Date()).getHours(),
-        depHour = parseInt(this.model.get("dep").match(/\d+(?=:)/)[0], 10);
-
-    this.model.set("active", hour === depHour);
   }
 });

@@ -36,11 +36,27 @@ module.exports = Backbone.View.extend({
   },
 
   render: function() {
-    var _this = this;
+    var _this = this,
+        currentTime,
+        laterTrips;
 
     this.$el.empty();
 
+    currentTime = this.zeroPadded( (new Date()).getHours()) +
+                  this.zeroPadded( (new Date()).getMinutes() );
+
+    laterTrips = _.chain(this.collection.models)
+      .filter(function (item) {
+        return item.attributes.dep.replace(":", "") > currentTime;
+      })
+      .take(3)
+      .pluck("id")
+      .value();
+
     _.each(this.collection.models, function(item) {
+      if(_.contains(laterTrips, item.id)) {
+        item.set("active", true);
+      }
       _this.renderTime(item);
     }, this);
   },
@@ -49,7 +65,6 @@ module.exports = Backbone.View.extend({
     var timeView = new TimeView({
       model: item
     });
-    timeView.highlightActive();
     this.$el.append(timeView.render().el);
   },
 
@@ -63,5 +78,9 @@ module.exports = Backbone.View.extend({
         });
         this.collection.reset(filtered);
     }
+  },
+
+  zeroPadded: function (number) {
+    return ("0" + number).slice(-2);
   }
 });
